@@ -11,7 +11,7 @@
         android:label="fragment_config"
         tools:layout="@layout/fragment_config" >
         <action
-            android:id="@+id/action_configFragment_to_gameFragment"
+            android:id="@+id/navigate_to_gameFragment"
             app:destination="@id/gameFragment" />
     </fragment>
     <fragment
@@ -19,8 +19,8 @@
         android:name="com.example.tbc_shemajamebeli_4.GameFragment"
         android:label="fragment_game"
         tools:layout="@layout/fragment_game" >
-        <action
-            android:id="@+id/action_gameFragment_to_configFragment"
-            app:destination="@id/configFragment" />
+        <argument
+            android:name="mode"
+            app:argType="string" />
     </fragment>
 </navigation>
